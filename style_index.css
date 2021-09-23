@@ -10,6 +10,7 @@ body{
 .container{
     display: flex;
     margin-top: 25px;
+    margin_left: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
