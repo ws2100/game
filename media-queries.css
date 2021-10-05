@@ -1,0 +1,30 @@
+@media screen and (max-width: 980px) {
+   #pagewrap {
+      width: 95%;}
+
+   #content {
+      width: 60%;
+      padding: 2% 3%;}
+    
+   #sidebar {
+      width: 30%;}
+}
+
+
+@media screen and (max-width: 850px) {
+   #header {
+      height: auto;}
+   #content {
+      width: auto;
+      float: none;}
+   #sidebar {
+      width: 90%;
+      float: none;
+      margin: 0;}
+}
+
+
+@media screen and (max-width: 480px) {
+   html {
+      -webkit-text-size-adjust: none;}
+}

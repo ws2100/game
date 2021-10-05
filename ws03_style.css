@@ -1,0 +1,215 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;}
+
+body{
+    background-image: url(img/fon.jpg);
+    background-repeat:     repeat-y;
+    background-attachment: fixed;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;}
+
+#header {
+    height: 30px;
+    color: rgb(0,255,255);
+    font-size: 16px;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+#content {
+    width: 500px;
+    float: left;}
+
+#sidebar {
+    width: 450px;
+    float: right;}
+
+#footer {
+    clear: both;}
+
+
+.sys1,
+.sys2,
+.sys3{
+    background-image: url(img/nebula_01.jpg);
+    width: 500px;
+    height: 500px;}
+
+.viewmap_btn{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-top:3px;
+    justify-content: space-around;}
+
+.btn_01 {
+    display: flex;
+    position: relative;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: rgb(0,155,155);
+    background: rgb(0,0,0);
+    cursor: pointer;
+    border-radius: 2px;
+    border: solid 1px rgb(0,50,50);
+    overflow: hidden;
+    transition: 0.1s;}
+
+.btn_01:hover {
+    color: #00ffff;
+    background: rgb(0,50,50);
+    border: solid 1px rgb(0,255,255);}
+
+#btn_system{background: rgb(0,50,50);}
+
+
+.star img,
+.planet_01 img,
+.planet_02 img,
+.planet_03 img,
+.planet_04 img,
+.planet_05 img,
+.planet_06 img,
+.planet_07 img,
+.planet_08 img,
+.planet_09 img,
+.planet_10 img{border-radius: 50%;}
+
+.star {
+    width: 30px;
+    height: 30px;
+    top: 280px;
+    left: 360px;
+    position: absolute;}
+
+.planet_01,
+.planet_02,
+.planet_03,
+.planet_04,
+.planet_05,
+.planet_06,
+.planet_07,
+.planet_08,
+.planet_09 {
+        width: 16px;
+        height: 16px;
+        top: 285px;
+        left: 365px;
+        position: absolute;
+        }
+
+.planet_10 {
+        width: 10px;
+        height: 10px;
+        top: 290px;
+        left: 350px;
+        position: absolute;
+        }
+
+
+
+.text1{
+    display: flex;
+    padding: 5px;
+    font-size: 17px;
+    align-items: stretch;
+    text-align: justify;
+    color: rgb(170,200,200);
+    padding-right: 5px;
+    background: rgba(2,10,15,0.3);}
+
+.block3{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 5px;
+    font-size: 18px;
+    color: rgb(170,200,200);}
+
+.ps{
+    font-size: 14px;
+    color: rgb(155,155,155);}
+
+
+.planet_01{
+    transform: rotate(45deg) translateX(30px) rotate(0deg);
+    animation: orbit1 54s infinite linear;}
+
+.planet_02{
+    transform: rotate(85deg) translateX(50px) rotate(0deg);
+    animation: orbit2 80s infinite linear;}
+
+.planet_03{
+    transform: rotate(145deg) translateX(70px) rotate(0deg);
+    animation: orbit3 111s infinite linear;}
+
+.planet_04{
+    transform: rotate(245deg) translateX(90px) rotate(0deg);
+    animation: orbit4 151s infinite linear;}
+
+.planet_05{
+    transform: rotate(345deg) translateX(110px) rotate(0deg);
+    animation: orbit5 201s infinite linear;}
+
+.planet_06{
+    transform: rotate(300deg) translateX(130px) rotate(0deg);
+    animation: orbit6 250s infinite linear;}
+
+.planet_07{
+    transform: rotate(200deg) translateX(150px) rotate(0deg);
+    animation: orbit7 300s infinite linear;}
+
+.planet_08{
+    transform: rotate(100deg) translateX(170px) rotate(0deg);
+    animation: orbit8 401s infinite linear;}
+
+.planet_09{
+    transform: rotate(93deg) translateX(190px) rotate(0deg);
+    animation: orbit9 500s infinite linear;}
+
+.planet_10{
+    transform: rotate(221deg) translateX(210px) rotate(0deg);
+    animation: orbit10 600s infinite linear;}
+
+@keyframes orbit1 {
+ from { transform: rotate(45deg) translateX(30px) rotate(-50deg) ; }
+ to   {  transform: rotate(360deg) translateX(30px) rotate(-310deg); }}
+
+@keyframes orbit2 {
+ from { transform: rotate(85deg) translateX(50px) rotate(-90deg); }
+ to   {  transform: rotate(445deg) translateX(50px) rotate(-270deg); }}
+
+@keyframes orbit3 {
+ from { transform: rotate(145deg) translateX(70px) rotate(-150deg); }
+ to   {  transform: rotate(505deg) translateX(70px) rotate(-210deg); }}
+
+@keyframes orbit4 {
+ from { transform: rotate(245deg) translateX(90px) rotate(-250deg); }
+ to   {  transform: rotate(605deg) translateX(90px) rotate(-110deg); }}
+
+@keyframes orbit5 {
+ from { transform: rotate(345deg) translateX(110px) rotate(-350deg); }
+ to   {  transform: rotate(705deg) translateX(110px) rotate(-10deg); }}
+
+@keyframes orbit6 {
+ from { transform: rotate(300deg) translateX(130px) rotate(-300deg); }
+ to   {  transform: rotate(660deg) translateX(130px) rotate(-60deg); }}
+
+@keyframes orbit7 {
+ from { transform: rotate(200deg) translateX(150px) rotate(-200deg); }
+ to   {  transform: rotate(560deg) translateX(150px) rotate(-160deg); }}
+
+@keyframes orbit8 {
+ from { transform: rotate(100deg) translateX(170px) rotate(-100deg); }
+ to   {  transform: rotate(460deg) translateX(170px) rotate(-260deg); }}
+
+@keyframes orbit9 {
+ from { transform: rotate(93deg) translateX(190px) rotate(-95deg); }
+ to   {  transform: rotate(453deg) translateX(190px) rotate(-265deg); }}
+
+@keyframes orbit10 {
+ from { transform: rotate(221deg) translateX(210px) rotate(-225deg); }
+ to   {  transform: rotate(581deg) translateX(210px) rotate(-135deg); }}
+
+
